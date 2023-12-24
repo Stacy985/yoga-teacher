@@ -1,0 +1,33 @@
+@import "./core";
+
+._body {
+  @include grid-layout(1fr, min-content max-content auto, 1em);
+  padding: 4em;
+  & > ._header {
+    @include grid-layout(min-content auto, min-content min-content, 1em);
+    padding-bottom: 4em;
+    grid-template-areas: "logo navigation" "welcome welcome";
+  }
+  & >._main{
+    width: 100wh;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}
+
+._main-gallery {
+  @include flex(4em, row);
+  padding-bottom: 4em;
+  width: 100wh;
+  & > ._gallery-item {
+    @include flex(1em, row, center);
+    display: inline-flex;
+  }
+  overflow-x: auto; //скроллим только галлерею
+  white-space: nowrap; //запрет переноса инлайновых элементов 
+  
+}
+
+._header-nav-container {
+  @include flex(1em, row);
+}

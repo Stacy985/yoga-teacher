@@ -1,0 +1,40 @@
+@import "./core";
+
+._header_list {
+  @include font(#2c0958, $font-Baloo-Regular, normal, 18px, 20px, 400);
+}
+._header_list-link {
+  text-decoration: none;
+}
+
+._header-logo{
+grid-area: logo;
+}
+._header-nav{
+grid-area: navigation;
+}
+._header-title {
+  @include font(#2c0958, $font-Playfair-BoldItalic, normal, 64px, 64px, 400);
+  grid-area: welcome
+}
+
+
+._gallery-item {
+  @include size(350px, 200px);
+  border-radius: 2em;
+  background: linear-gradient(
+    68deg,
+    rgba(255, 98, 183, 0.2) 14.39%,
+    rgba(159, 83, 255, 0.2) 79.59%
+  );
+  border: 1px solid #2c0958;
+  &>._gallery_item_title{
+    @include font(#2C0958,$Montserrat-Bold, normal, 24px, 30px, 400)
+  }
+}
+._form-text{
+  @include size(400px, 100px);
+  border: 1px solid red;
+  padding-top: 5px;
+
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/css/app.css" />
+    <script src="src/index.js"> </script>
+  </head>
+  <body class="_body">
+    <header class="_header">
+      <div class="_header-logo">
+        <img src="./src/images/FT_Yoga.svg" alt="" />
+      </div>
+
+      <nav class="_header-nav">
+        <ul class="_header-nav-container">
+          <li class="_header_list"><a class="_header_list-link" href="#about">Обо мне</a></li>
+          <li class="_header_list"><a class="_header_list-link" href="#classes">Классы</a></li>
+          <li class="_header_list"><a class="_header_list-link" href="#reviews">Отзывы</a></li>
+          <li class="_header_list"><a class="_header_list-link" href="#contacts">Контакты</a></li>
+        </ul>
+      </nav>
+      <h1 class="_header-title">Добро пожаловать к преподавателю йоги!</h1>
+    </header>
+    <main class="_main">
+      <section class="_main-gallery">
+        <div class="_gallery-item">
+          <h3 class="_gallery_item_title">Индивидуальные занятия</h3>
+        </div>
+
+        <div class="_gallery-item">
+          <h3 class="_gallery_item_title">Групповые занятия</h3>
+        </div>
+
+        <div class="_gallery-item">
+          <h3 class="_gallery_item_title">Йогатерапия</h3>
+        </div>
+
+        <div class="_gallery-item">
+          <h3 class="_gallery_item_title">Тейпирование</h3>
+        </div>
+
+        <div class="_gallery-item">
+          <h3 class="_gallery_item_title">Реабилитация</h3>
+        </div>
+        <div class="_gallery-item">
+          <h3 class="_gallery_item_title">Реабилитация</h3>
+        </div>
+        <div class="_gallery-item">
+          <h3 class="_gallery_item_title">Реабилитация</h3>
+        </div>
+      </section>
+      <div class="_main-content">
+        <h2 class="_contacts_title">Контактная информация</h2>
+      <form id="contactForm" action="обработчик_формы.php" method="POST" class="_main-content">
+        <div id="information" style="display: none;"></div>  <!-- скрытый блок, который появляется во время ошибки -->
+        <label for="name">Имя:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="phone">Телефон:</label>
+        <input type="tel" id="phone" name="phone" required />
+
+        <label for="message">Сообщение:</label>
+       <!--  <textarea id="message" name="message" rows="4" required></textarea> -->
+        <div class="_form-text" contenteditable="true" id="message"></div>
+
+        <input type="submit" value="Отправить" id="submit"/>
+      </form>
+    </div>
+    </main>
+    <footer class="_footer">
+        &copy; 2023 Преподаватель йоги. Все права защищены.
+    </footer>
+  </body>
+</html>

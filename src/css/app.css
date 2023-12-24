@@ -1,0 +1,477 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+code,
+em,
+img,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+b,
+u,
+i,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+main,
+canvas,
+embed,
+footer,
+header,
+nav,
+section,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+     -moz-text-size-adjust: none;
+          text-size-adjust: none;
+  list-style-type: none;
+}
+
+footer,
+header,
+nav,
+section,
+main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input {
+  border-radius: 0;
+}
+
+@font-face {
+  font-family: "Baloo Regular";
+  src: url("../fonts/BalooBhaijaan/BalooBhaijaan-Regular.ttf");
+}
+@font-face {
+  font-family: "Playfair BoldItalic";
+  src: url("../fonts/Playfair/PlayfairDisplay-BoldItalic.ttf");
+}
+@font-face {
+  font-family: "Montserrat Bold";
+  src: url("../fonts/Montserrat/static/Montserrat-Bold.ttf");
+}
+._header_list {
+  color: #2c0958;
+  font-family: "Baloo Regular";
+  font-style: normal;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 20px;
+  text-decoration: none;
+  text-underline-offset: 3px;
+}
+
+._header_list-link {
+  text-decoration: none;
+}
+
+._header-logo {
+  grid-area: logo;
+}
+
+._header-nav {
+  grid-area: navigation;
+}
+
+._header-title {
+  color: #2c0958;
+  font-family: "Playfair BoldItalic";
+  font-style: normal;
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 64px;
+  text-decoration: none;
+  text-underline-offset: 3px;
+  grid-area: welcome;
+}
+
+._gallery-item {
+  width: 350px;
+  height: 200px;
+  box-sizing: border-box;
+  border-radius: 2em;
+  background: linear-gradient(68deg, rgba(255, 98, 183, 0.2) 14.39%, rgba(159, 83, 255, 0.2) 79.59%);
+  border: 1px solid #2c0958;
+}
+._gallery-item > ._gallery_item_title {
+  color: #2C0958;
+  font-family: "Montserrat Bold";
+  font-style: normal;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 30px;
+  text-decoration: none;
+  text-underline-offset: 3px;
+}
+
+._form-text {
+  width: 400px;
+  height: 100px;
+  box-sizing: border-box;
+  border: 1px solid red;
+  padding-top: 5px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+code,
+em,
+img,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+b,
+u,
+i,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+main,
+canvas,
+embed,
+footer,
+header,
+nav,
+section,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+     -moz-text-size-adjust: none;
+          text-size-adjust: none;
+  list-style-type: none;
+}
+
+footer,
+header,
+nav,
+section,
+main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input {
+  border-radius: 0;
+}
+
+@font-face {
+  font-family: "Baloo Regular";
+  src: url("../fonts/BalooBhaijaan/BalooBhaijaan-Regular.ttf");
+}
+@font-face {
+  font-family: "Playfair BoldItalic";
+  src: url("../fonts/Playfair/PlayfairDisplay-BoldItalic.ttf");
+}
+@font-face {
+  font-family: "Montserrat Bold";
+  src: url("../fonts/Montserrat/static/Montserrat-Bold.ttf");
+}
+._body {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: min-content max-content auto;
+  gap: 1em;
+  padding: 4em;
+}
+._body > ._header {
+  display: grid;
+  grid-template-columns: min-content auto;
+  grid-template-rows: min-content min-content;
+  gap: 1em;
+  padding-bottom: 4em;
+  grid-template-areas: "logo navigation" "welcome welcome";
+}
+._body > ._main {
+  width: 100wh;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+._main-gallery {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4em;
+  padding-bottom: 4em;
+  width: 100wh;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+._main-gallery > ._gallery-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  display: inline-flex;
+}
+
+._header-nav-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1em;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+code,
+em,
+img,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+b,
+u,
+i,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+main,
+canvas,
+embed,
+footer,
+header,
+nav,
+section,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+     -moz-text-size-adjust: none;
+          text-size-adjust: none;
+  list-style-type: none;
+}
+
+footer,
+header,
+nav,
+section,
+main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input {
+  border-radius: 0;
+}
+
+@font-face {
+  font-family: "Baloo Regular";
+  src: url("../fonts/BalooBhaijaan/BalooBhaijaan-Regular.ttf");
+}
+@font-face {
+  font-family: "Playfair BoldItalic";
+  src: url("../fonts/Playfair/PlayfairDisplay-BoldItalic.ttf");
+}
+@font-face {
+  font-family: "Montserrat Bold";
+  src: url("../fonts/Montserrat/static/Montserrat-Bold.ttf");
+}/*# sourceMappingURL=app.css.map */

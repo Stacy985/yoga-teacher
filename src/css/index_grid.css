@@ -1,0 +1,22 @@
+*{
+box-sizing: border-box;
+
+}
+body{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content 50vh auto;
+    gap: 1em;
+}
+._header{
+    display: grid;
+    grid-template-columns: min-content auto auto;
+    grid-template-rows: min-content;
+    gap: 1em;
+}
+@media screen and ( max-width: 720px){
+    ._header{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, min-content);
+    }
+}
