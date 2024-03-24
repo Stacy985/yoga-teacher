@@ -1,0 +1,220 @@
+// ---- Reset ----
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+code,
+em,
+img,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+b,
+u,
+i,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+main,
+canvas,
+embed,
+footer,
+header,
+nav,
+section,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  text-size-adjust: none;
+  list-style-type: none;
+}
+
+footer,
+header,
+nav,
+section,
+main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input {
+  border-radius: 0;
+}
+//-webkit-appearance: none;
+
+// ---- Mixin ----
+
+@mixin size($width, $height) {
+  width: $width;
+  height: $height;
+  box-sizing: border-box;
+}
+
+@mixin spacing($property, $direction: all, $size: 1px) {
+  @if $direction == all {
+    @include spacer($property, $size);
+  } @else if $direction == left {
+    @include spacer(#{$property}-left, $size);
+  } @else if $direction == top {
+    @include spacer(#{$property}-top, $size);
+  } @else if $direction == right {
+    @include spacer(#{$property}-right, $size);
+  } @else if $direction == bottom {
+    @include spacer(#{$property}-bottom, $size);
+  } @else if $direction == x {
+    @include spacer(#{$property}-left, $size);
+    @include spacer(#{$property}-right, $size);
+  } @else if $direction == y {
+    @include spacer(#{$property}-top, $size);
+    @include spacer(#{$property}-bottom, $size);
+  } @else {
+    @include spacer(#{$property}, $size);
+  }
+}
+
+@mixin flex($gap, $direction: row, $justify: space-between, $align: center) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+  gap: $gap;
+}
+
+@mixin grid-layout($columns, $rows, $gap) {
+  display: grid;
+  grid-template-columns: $columns;
+  grid-template-rows: $rows;
+  gap: $gap;
+}
+
+@mixin font(
+  $color: white,
+  $family: "Roboto Regular",
+  $style: normal,
+  $size: 14px,
+  $height: 16px,
+  $weight: 400,
+  $underline: none,
+  $underline-offset: 3px
+) {
+  color: $color;
+
+  font: {
+    family: $family;
+    style: $style;
+    size: $size;
+    weight: $weight;
+  }
+  line-height: $height;
+
+  text-decoration: $underline;
+  text-underline-offset: $underline-offset;
+}
+
+
+@mixin button($bg-color: #3498db, $text-color: #fff, $padding: 10px 20px, $border-radius: 5px) {
+  background-color: $bg-color;
+  color: $text-color;
+  padding: $padding;
+  border: none;
+  border-radius: $border-radius;
+  cursor: pointer;
+
+  &:hover {
+    background-color: darken($bg-color, 10%);
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+  }
+}
+
+// ---- Variables ----
+$Poppins-SemiBold: "Poppins-SemiBold";
+$Bluemoon-regular: "Bluemoon";
+$PT-Rout: "PT-Rout";
+
+//Fonts
+
+@font-face {
+  font-family: "Poppins-SemiBold";
+  src: url("../fonts/Poppins/Poppins-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "Bluemoon";
+  src: url("../fonts/Bluemoon/Blue\ Moon.otf");
+}
+
+@font-face{
+  font-family: "PT-Rout";
+  src: url("../fonts/PT-Root-UI/pt-root-ui_bold.woff")
+} 

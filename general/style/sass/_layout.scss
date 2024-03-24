@@ -1,0 +1,39 @@
+@import "../sass/core";
+
+._header {
+  display: grid;
+  grid-template: 0.5fr 60vh / 1fr 2fr;
+  margin: 2em auto 0;
+  width: 90%;
+  row-gap: 2em;
+  & > ._header_content {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  ._header {
+    max-width: 95%;
+    grid-template: 0.5fr 40vh / 1fr 2fr;
+  }
+}
+
+/* ._header_nav_container {
+  @include flex(0.5em);
+} */
+
+
+
+
+
+
+/* @media screen and (max-width: 320px) {
+  ._header {
+    grid-template: 0.5fr 30vh / 1fr 1fr;
+  }
+  ._header_nav_container {
+    @include flex(0.5em, column, space-between, flex-start);
+  }
+}
+ */
