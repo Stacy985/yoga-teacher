@@ -2,9 +2,9 @@
 
 
 ### Технологии
-*Sass
-*Grids
-*Flex-box
-*php
-*JS
+* Sass
+* Grids
+* Flex-box
+* php
+* JS
 
