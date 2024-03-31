@@ -8,32 +8,26 @@ function closePopup(popup, param) {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-  document.querySelector("._header-burger").addEventListener("click", function () {
-    let popup = document.querySelector("._popup-menu");
-    openPopup(popup, ["_header_nav_container", "_popup-menu"]);
+  document
+    .querySelector("._header-burger")
+    .addEventListener("click", function () {
+      let popup = document.querySelector("._popup-menu");
+      openPopup(popup, ["_header_nav_container", "_popup-menu"]);
     });
 
-  document.querySelector("._popup-close").addEventListener("click", function () {
-    let popup = document.querySelector("._header_nav_container");
-    closePopup(popup, ["_popup-menu", "_header_nav_container"]);
+  document
+    .querySelector("._popup-close")
+    .addEventListener("click", function () {
+      let popup = document.querySelector("._header_nav_container");
+      closePopup(popup, ["_popup-menu", "_header_nav_container"]);
     });
+
+  let url = document.location.href;
+  let pattern = /[\/]{1}([a-z\.]+)$/;
+  if (pattern.test(url)) {
+    let fileName = pattern.exec(url);
+    if (fileName[1] !== "index.php") {
+      document.querySelector("._header_content").classList.add("_header_content-page");
+    }
+  }
 });
-
-//id="header_nav_container"
-
-/* document.addEventListener("DOMContentLoaded", function(){
-    document.getElementById("close").addEventListener("click", function(){
-        this.style.display = "none"; 
-        document.getElementById("header_nav_container").style.display = "none";
-        
-    })
-    document.getElementById("header-burger").addEventListener("click", ()=>{
-        document.getElementById("close").style.display = "block";
-        document.getElementById("header_nav_container").style.display = "block";
-    })
-}) 
-
-}*/
-
-//  window.addEventListener("keydown", keyHandlerEsc);
-//window.addEventListener("mousedown", closeByClickOverlay)

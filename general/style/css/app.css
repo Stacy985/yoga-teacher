@@ -124,193 +124,6 @@ body {
   background: #ffffff;
 }
 
-._header_logo {
-  border-bottom: #202125 2px solid;
-}
-
-._header_container {
-  border-bottom: #202125 2px solid;
-}
-
-._header-burger, ._close {
-  display: none;
-}
-
-._header_nav a {
-  color: #202125;
-  font-family: "PT-Rout";
-  font-style: 600;
-  font-size: 0.8em;
-  font-weight: 400;
-  line-height: 16px;
-  text-decoration: none;
-  text-underline-offset: 3px;
-  text-transform: uppercase;
-}
-
-._header_nav_container {
-  display: block;
-  position: fixed;
-  z-index: 1;
-  width: 100%;
-  height: 90%;
-  top: 0;
-  left: 0;
-  background-color: white;
-  border: #CCD1D5 solid 2px;
-  border-radius: 8px;
-}
-
-._popup-menu > ._popup-close {
-  display: none;
-}
-
-._header_content {
-  background-image: url("../../img/backround.svg");
-  background-repeat: no-repeat;
-  background-size: 78% auto;
-  background-position: right bottom;
-  position: relative;
-}
-
-._header_content h2 {
-  color: #202125;
-  font-family: "Bluemoon";
-  font-style: normal;
-  font-size: 8em;
-  font-weight: 400;
-  line-height: 16px;
-  text-decoration: none;
-  text-underline-offset: 3px;
-  position: absolute;
-  top: 1.45em;
-}
-
-._header_content div {
-  position: absolute;
-  bottom: 0;
-}
-
-._header_content > div > p {
-  color: #202125;
-  font-family: "PT-Rout";
-  font-style: 600;
-  font-size: 1.1em;
-  font-weight: 400;
-  line-height: 16px;
-  text-decoration: none;
-  text-underline-offset: 3px;
-  margin-bottom: 1em;
-}
-
-._header_content h1 {
-  color: #202125;
-  font-family: "Bluemoon";
-  font-style: normal;
-  font-size: 9em;
-  font-weight: 400;
-  line-height: 16px;
-  text-decoration: none;
-  text-underline-offset: 3px;
-  position: absolute;
-  top: 0.6em;
-}
-
-@media screen and (min-width: 768px) {
-  ._popup-menu > ul {
-    display: flex;
-    gap: 5em;
-    justify-content: flex-end;
-  }
-  ._header_content {
-    background-size: 150% auto;
-  }
-  ._header_content h1 {
-    color: #202125;
-    font-family: "Bluemoon";
-    font-style: normal;
-    font-size: 6em;
-    font-weight: 400;
-    line-height: 16px;
-    text-decoration: none;
-    text-underline-offset: 3px;
-    top: 0.3em;
-  }
-  ._header_content h2 {
-    color: #202125;
-    font-family: "Bluemoon";
-    font-style: normal;
-    font-size: 5em;
-    font-weight: 400;
-    line-height: 16px;
-    text-decoration: none;
-    text-underline-offset: 3px;
-  }
-  ._header_content > div > p {
-    font-size: 0.8em;
-  }
-  ._header_button {
-    width: 80%;
-  }
-}
-@media screen and (max-width: 430px) {
-  ._popup-menu {
-    display: none;
-  }
-  ._header-burger {
-    display: block;
-  }
-  ._header_container {
-    display: grid;
-    grid-template: 1fr/1fr;
-    align-items: center;
-    justify-items: right;
-  }
-  ._close {
-    display: block;
-    position: fixed;
-    z-index: 2;
-    right: 0;
-    top: 0;
-  }
-}
-@media screen and (max-width: 320px) {
-  ._header_img {
-    width: 60px;
-  }
-  ._header_content {
-    background-size: 200% auto;
-    background-position: right bottom;
-  }
-  ._header_content h1 {
-    color: #202125;
-    font-family: "Bluemoon";
-    font-style: normal;
-    font-size: 3em;
-    font-weight: 400;
-    line-height: 16px;
-    text-decoration: none;
-    text-underline-offset: 3px;
-    top: 0.1em;
-  }
-  ._header_content h2 {
-    color: #202125;
-    font-family: "Bluemoon";
-    font-style: normal;
-    font-size: 3em;
-    font-weight: 400;
-    line-height: 16px;
-    text-decoration: none;
-    text-underline-offset: 3px;
-    top: 1em;
-  }
-  ._header_content > div > p {
-    font-size: 0.75em;
-  }
-  ._header_button {
-    width: 60%;
-  }
-}
 *,
 *:before,
 *:after {
@@ -435,7 +248,7 @@ input {
 }
 ._header {
   display: grid;
-  grid-template: 0.5fr 60vh/1fr 2fr;
+  grid-template: 0.5fr min-content/1fr 2fr;
   margin: 2em auto 0;
   width: 90%;
   row-gap: 2em;
@@ -584,4 +397,1842 @@ input {
 @font-face {
   font-family: "PT-Rout";
   src: url("../fonts/PT-Root-UI/pt-root-ui_bold.woff");
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+code,
+em,
+img,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+b,
+u,
+i,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+main,
+canvas,
+embed,
+footer,
+header,
+nav,
+section,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+     -moz-text-size-adjust: none;
+          text-size-adjust: none;
+  list-style-type: none;
+}
+
+footer,
+header,
+nav,
+section,
+main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input {
+  border-radius: 0;
+}
+
+@font-face {
+  font-family: "Poppins-SemiBold";
+  src: url("../fonts/Poppins/Poppins-SemiBold.ttf");
+}
+@font-face {
+  font-family: "Bluemoon";
+  src: url("../fonts/Bluemoon/Blue Moon.otf");
+}
+@font-face {
+  font-family: "PT-Rout";
+  src: url("../fonts/PT-Root-UI/pt-root-ui_bold.woff");
+}
+._about {
+  background-color: #E7EBE8;
+  display: flex;
+  align-items: center;
+}
+
+._about-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  width: 90%;
+}
+
+._about-title {
+  color: #202125;
+  font-family: "PT-Rout";
+  font-style: 600;
+  font-size: 2.5em;
+  font-weight: 400;
+  line-height: 16px;
+  text-decoration: none;
+  text-underline-offset: 3px;
+  text-transform: uppercase;
+}
+
+._about-subtitle {
+  color: #202125;
+  font-family: "PT-Rout";
+  font-style: 600;
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.5em;
+  text-decoration: none;
+  text-underline-offset: 3px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+code,
+em,
+img,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+b,
+u,
+i,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+main,
+canvas,
+embed,
+footer,
+header,
+nav,
+section,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+     -moz-text-size-adjust: none;
+          text-size-adjust: none;
+  list-style-type: none;
+}
+
+footer,
+header,
+nav,
+section,
+main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input {
+  border-radius: 0;
+}
+
+@font-face {
+  font-family: "Poppins-SemiBold";
+  src: url("../fonts/Poppins/Poppins-SemiBold.ttf");
+}
+@font-face {
+  font-family: "Bluemoon";
+  src: url("../fonts/Bluemoon/Blue Moon.otf");
+}
+@font-face {
+  font-family: "PT-Rout";
+  src: url("../fonts/PT-Root-UI/pt-root-ui_bold.woff");
+}
+._about-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  width: 90%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+code,
+em,
+img,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+b,
+u,
+i,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+main,
+canvas,
+embed,
+footer,
+header,
+nav,
+section,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+     -moz-text-size-adjust: none;
+          text-size-adjust: none;
+  list-style-type: none;
+}
+
+footer,
+header,
+nav,
+section,
+main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input {
+  border-radius: 0;
+}
+
+@font-face {
+  font-family: "Poppins-SemiBold";
+  src: url("../fonts/Poppins/Poppins-SemiBold.ttf");
+}
+@font-face {
+  font-family: "Bluemoon";
+  src: url("../fonts/Bluemoon/Blue Moon.otf");
+}
+@font-face {
+  font-family: "PT-Rout";
+  src: url("../fonts/PT-Root-UI/pt-root-ui_bold.woff");
+}
+._header_logo {
+  border-bottom: #202125 2px solid;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+code,
+em,
+img,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+b,
+u,
+i,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+main,
+canvas,
+embed,
+footer,
+header,
+nav,
+section,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+     -moz-text-size-adjust: none;
+          text-size-adjust: none;
+  list-style-type: none;
+}
+
+footer,
+header,
+nav,
+section,
+main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input {
+  border-radius: 0;
+}
+
+@font-face {
+  font-family: "Poppins-SemiBold";
+  src: url("../fonts/Poppins/Poppins-SemiBold.ttf");
+}
+@font-face {
+  font-family: "Bluemoon";
+  src: url("../fonts/Bluemoon/Blue Moon.otf");
+}
+@font-face {
+  font-family: "PT-Rout";
+  src: url("../fonts/PT-Root-UI/pt-root-ui_bold.woff");
+}
+._header_container {
+  border-bottom: #202125 2px solid;
+}
+
+@media screen and (max-width: 430px) {
+  ._header_container {
+    display: grid;
+    grid-template: 1fr/1fr;
+    align-items: center;
+    justify-items: right;
+  }
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+code,
+em,
+img,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+b,
+u,
+i,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+main,
+canvas,
+embed,
+footer,
+header,
+nav,
+section,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+     -moz-text-size-adjust: none;
+          text-size-adjust: none;
+  list-style-type: none;
+}
+
+footer,
+header,
+nav,
+section,
+main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input {
+  border-radius: 0;
+}
+
+@font-face {
+  font-family: "Poppins-SemiBold";
+  src: url("../fonts/Poppins/Poppins-SemiBold.ttf");
+}
+@font-face {
+  font-family: "Bluemoon";
+  src: url("../fonts/Bluemoon/Blue Moon.otf");
+}
+@font-face {
+  font-family: "PT-Rout";
+  src: url("../fonts/PT-Root-UI/pt-root-ui_bold.woff");
+}
+._header_content {
+  min-height: 60vh;
+  background-image: url("../../img/backround.svg");
+  background-repeat: no-repeat;
+  background-size: 78% auto;
+  background-position: right bottom;
+  position: relative;
+}
+
+._header_content div {
+  position: absolute;
+  bottom: 0;
+}
+
+._header_content h2 {
+  color: #202125;
+  font-family: "Bluemoon";
+  font-style: normal;
+  font-size: 8em;
+  font-weight: 400;
+  line-height: 16px;
+  text-decoration: none;
+  text-underline-offset: 3px;
+  position: absolute;
+  top: 1.45em;
+}
+
+._header_content > div > p {
+  color: #202125;
+  font-family: "PT-Rout";
+  font-style: 600;
+  font-size: 1.1em;
+  font-weight: 400;
+  line-height: 16px;
+  text-decoration: none;
+  text-underline-offset: 3px;
+  margin-bottom: 1em;
+}
+
+._header_content h1 {
+  color: #202125;
+  font-family: "Bluemoon";
+  font-style: normal;
+  font-size: 9em;
+  font-weight: 400;
+  line-height: 16px;
+  text-decoration: none;
+  text-underline-offset: 3px;
+  position: absolute;
+  top: 0.6em;
+}
+
+@media screen and (min-width: 768px) {
+  ._header_content {
+    background-size: 150% auto;
+  }
+  ._header_content h1 {
+    color: #202125;
+    font-family: "Bluemoon";
+    font-style: normal;
+    font-size: 6em;
+    font-weight: 400;
+    line-height: 16px;
+    text-decoration: none;
+    text-underline-offset: 3px;
+    top: 0.3em;
+  }
+  ._header_content h2 {
+    color: #202125;
+    font-family: "Bluemoon";
+    font-style: normal;
+    font-size: 5em;
+    font-weight: 400;
+    line-height: 16px;
+    text-decoration: none;
+    text-underline-offset: 3px;
+  }
+  ._header_content > div > p {
+    font-size: 0.8em;
+  }
+}
+@media screen and (max-width: 320px) {
+  ._header_content {
+    background-size: 200% auto;
+    background-position: right bottom;
+  }
+  ._header_content h1 {
+    color: #202125;
+    font-family: "Bluemoon";
+    font-style: normal;
+    font-size: 3em;
+    font-weight: 400;
+    line-height: 16px;
+    text-decoration: none;
+    text-underline-offset: 3px;
+    top: 0.1em;
+  }
+  ._header_content h2 {
+    color: #202125;
+    font-family: "Bluemoon";
+    font-style: normal;
+    font-size: 3em;
+    font-weight: 400;
+    line-height: 16px;
+    text-decoration: none;
+    text-underline-offset: 3px;
+    top: 1em;
+  }
+  ._header_content > div > p {
+    font-size: 0.75em;
+  }
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+code,
+em,
+img,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+b,
+u,
+i,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+main,
+canvas,
+embed,
+footer,
+header,
+nav,
+section,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+     -moz-text-size-adjust: none;
+          text-size-adjust: none;
+  list-style-type: none;
+}
+
+footer,
+header,
+nav,
+section,
+main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input {
+  border-radius: 0;
+}
+
+@font-face {
+  font-family: "Poppins-SemiBold";
+  src: url("../fonts/Poppins/Poppins-SemiBold.ttf");
+}
+@font-face {
+  font-family: "Bluemoon";
+  src: url("../fonts/Bluemoon/Blue Moon.otf");
+}
+@font-face {
+  font-family: "PT-Rout";
+  src: url("../fonts/PT-Root-UI/pt-root-ui_bold.woff");
+}
+._header_nav a {
+  color: #202125;
+  font-family: "PT-Rout";
+  font-style: 600;
+  font-size: 0.8em;
+  font-weight: 400;
+  line-height: 16px;
+  text-decoration: none;
+  text-underline-offset: 3px;
+  text-transform: uppercase;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+code,
+em,
+img,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+b,
+u,
+i,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+main,
+canvas,
+embed,
+footer,
+header,
+nav,
+section,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+     -moz-text-size-adjust: none;
+          text-size-adjust: none;
+  list-style-type: none;
+}
+
+footer,
+header,
+nav,
+section,
+main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input {
+  border-radius: 0;
+}
+
+@font-face {
+  font-family: "Poppins-SemiBold";
+  src: url("../fonts/Poppins/Poppins-SemiBold.ttf");
+}
+@font-face {
+  font-family: "Bluemoon";
+  src: url("../fonts/Bluemoon/Blue Moon.otf");
+}
+@font-face {
+  font-family: "PT-Rout";
+  src: url("../fonts/PT-Root-UI/pt-root-ui_bold.woff");
+}
+._popup-menu > ._popup-close {
+  display: none;
+}
+
+@media screen and (max-width: 430px) {
+  ._popup-menu {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  ._popup-menu > ul {
+    display: flex;
+    gap: 5em;
+    justify-content: flex-end;
+  }
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+code,
+em,
+img,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+b,
+u,
+i,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+main,
+canvas,
+embed,
+footer,
+header,
+nav,
+section,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+     -moz-text-size-adjust: none;
+          text-size-adjust: none;
+  list-style-type: none;
+}
+
+footer,
+header,
+nav,
+section,
+main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input {
+  border-radius: 0;
+}
+
+@font-face {
+  font-family: "Poppins-SemiBold";
+  src: url("../fonts/Poppins/Poppins-SemiBold.ttf");
+}
+@font-face {
+  font-family: "Bluemoon";
+  src: url("../fonts/Bluemoon/Blue Moon.otf");
+}
+@font-face {
+  font-family: "PT-Rout";
+  src: url("../fonts/PT-Root-UI/pt-root-ui_bold.woff");
+}
+@media screen and (max-width: 320px) {
+  ._header_img {
+    width: 60px;
+  }
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+code,
+em,
+img,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+b,
+u,
+i,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+main,
+canvas,
+embed,
+footer,
+header,
+nav,
+section,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+     -moz-text-size-adjust: none;
+          text-size-adjust: none;
+  list-style-type: none;
+}
+
+footer,
+header,
+nav,
+section,
+main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input {
+  border-radius: 0;
+}
+
+@font-face {
+  font-family: "Poppins-SemiBold";
+  src: url("../fonts/Poppins/Poppins-SemiBold.ttf");
+}
+@font-face {
+  font-family: "Bluemoon";
+  src: url("../fonts/Bluemoon/Blue Moon.otf");
+}
+@font-face {
+  font-family: "PT-Rout";
+  src: url("../fonts/PT-Root-UI/pt-root-ui_bold.woff");
+}
+._close {
+  display: none;
+}
+
+@media screen and (max-width: 430px) {
+  ._close {
+    display: block;
+    position: fixed;
+    z-index: 2;
+    right: 0;
+    top: 0;
+  }
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+code,
+em,
+img,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+b,
+u,
+i,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+main,
+canvas,
+embed,
+footer,
+header,
+nav,
+section,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+     -moz-text-size-adjust: none;
+          text-size-adjust: none;
+  list-style-type: none;
+}
+
+footer,
+header,
+nav,
+section,
+main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input {
+  border-radius: 0;
+}
+
+@font-face {
+  font-family: "Poppins-SemiBold";
+  src: url("../fonts/Poppins/Poppins-SemiBold.ttf");
+}
+@font-face {
+  font-family: "Bluemoon";
+  src: url("../fonts/Bluemoon/Blue Moon.otf");
+}
+@font-face {
+  font-family: "PT-Rout";
+  src: url("../fonts/PT-Root-UI/pt-root-ui_bold.woff");
+}
+._header_nav_container {
+  display: block;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  height: 90%;
+  top: 0;
+  left: 0;
+  background-color: white;
+  border: #ccd1d5 solid 2px;
+  border-radius: 8px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+code,
+em,
+img,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+b,
+u,
+i,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+main,
+canvas,
+embed,
+footer,
+header,
+nav,
+section,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+     -moz-text-size-adjust: none;
+          text-size-adjust: none;
+  list-style-type: none;
+}
+
+footer,
+header,
+nav,
+section,
+main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input {
+  border-radius: 0;
+}
+
+@font-face {
+  font-family: "Poppins-SemiBold";
+  src: url("../fonts/Poppins/Poppins-SemiBold.ttf");
+}
+@font-face {
+  font-family: "Bluemoon";
+  src: url("../fonts/Bluemoon/Blue Moon.otf");
+}
+@font-face {
+  font-family: "PT-Rout";
+  src: url("../fonts/PT-Root-UI/pt-root-ui_bold.woff");
+}
+._header-burger {
+  display: none;
+}
+
+@media screen and (max-width: 430px) {
+  ._header-burger {
+    display: block;
+  }
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+code,
+em,
+img,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+b,
+u,
+i,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+main,
+canvas,
+embed,
+footer,
+header,
+nav,
+section,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+     -moz-text-size-adjust: none;
+          text-size-adjust: none;
+  list-style-type: none;
+}
+
+footer,
+header,
+nav,
+section,
+main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input {
+  border-radius: 0;
+}
+
+@font-face {
+  font-family: "Poppins-SemiBold";
+  src: url("../fonts/Poppins/Poppins-SemiBold.ttf");
+}
+@font-face {
+  font-family: "Bluemoon";
+  src: url("../fonts/Bluemoon/Blue Moon.otf");
+}
+@font-face {
+  font-family: "PT-Rout";
+  src: url("../fonts/PT-Root-UI/pt-root-ui_bold.woff");
+}
+@media screen and (min-width: 768px) {
+  ._header_button {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 320px) {
+  ._header_button {
+    width: 60%;
+  }
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+code,
+em,
+img,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+b,
+u,
+i,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+main,
+canvas,
+embed,
+footer,
+header,
+nav,
+section,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+     -moz-text-size-adjust: none;
+          text-size-adjust: none;
+  list-style-type: none;
+}
+
+footer,
+header,
+nav,
+section,
+main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input {
+  border-radius: 0;
+}
+
+@font-face {
+  font-family: "Poppins-SemiBold";
+  src: url("../fonts/Poppins/Poppins-SemiBold.ttf");
+}
+@font-face {
+  font-family: "Bluemoon";
+  src: url("../fonts/Bluemoon/Blue Moon.otf");
+}
+@font-face {
+  font-family: "PT-Rout";
+  src: url("../fonts/PT-Root-UI/pt-root-ui_bold.woff");
+}
+._header_content-page {
+  display: none;
 }/*# sourceMappingURL=app.css.map */

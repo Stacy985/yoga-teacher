@@ -1,0 +1,10 @@
+@import "../../_core.scss";
+
+._header-burger {
+    display: none;
+  };
+  @media screen and (max-width: 430px) {
+    ._header-burger {
+      display: block;
+    }
+  };

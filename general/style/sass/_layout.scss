@@ -2,7 +2,7 @@
 
 ._header {
   display: grid;
-  grid-template: 0.5fr 60vh / 1fr 2fr;
+  grid-template: 0.5fr min-content / 1fr 2fr;
   margin: 2em auto 0;
   width: 90%;
   row-gap: 2em;

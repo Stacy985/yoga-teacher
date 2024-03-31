@@ -1,0 +1,66 @@
+@import "../../_core.scss";
+
+._header_content {
+  min-height: 60vh;
+  background-image: url("../../img/backround.svg");
+  background-repeat: no-repeat;
+  background-size: 78% auto;
+  background-position: right bottom;
+  position: relative;
+}
+
+._header_content div {
+  position: absolute;
+  bottom: 0;
+}
+
+._header_content h2 {
+  @include font(#202125, $Bluemoon-regular, normal, 8em);
+  position: absolute;
+  top: 1.45em;
+}
+
+._header_content > div > p {
+  @include font(#202125, $PT-Rout, 600, 1.1em);
+  margin-bottom: 1em;
+}
+
+._header_content h1 {
+  @include font(#202125, $Bluemoon-regular, normal, 9em);
+  position: absolute;
+  top: 0.6em;
+}
+
+@media screen and (min-width: 768px) {
+  ._header_content {
+    background-size: 150% auto;
+  }
+  ._header_content h1 {
+    @include font(#202125, $Bluemoon-regular, normal, 6em);
+    top: 0.3em;
+  }
+  ._header_content h2 {
+    @include font(#202125, $Bluemoon-regular, normal, 5em);
+  }
+  ._header_content > div > p {
+    font-size: 0.8em;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  ._header_content {
+    background-size: 200% auto;
+    background-position: right bottom;
+  }
+  ._header_content h1 {
+    @include font(#202125, $Bluemoon-regular, normal, 3em);
+    top: 0.1em;
+  }
+  ._header_content h2 {
+    @include font(#202125, $Bluemoon-regular, normal, 3em);
+    top: 1em;
+  }
+  ._header_content > div > p {
+    font-size: 0.75em;
+  }
+}

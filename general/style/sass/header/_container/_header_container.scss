@@ -1,0 +1,13 @@
+@import "../../_core.scss";
+
+._header_container {
+  border-bottom: #202125 2px solid;
+}
+@media screen and (max-width: 430px) {
+  ._header_container {
+    display: grid;
+    grid-template: 1fr/1fr;
+    align-items: center;
+    justify-items: right;
+  }
+};

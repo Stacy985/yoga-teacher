@@ -1,0 +1,19 @@
+@import "../../_core.scss";
+
+._popup-menu > ._popup-close {
+  display: none;
+};
+
+@media screen and (max-width: 430px) {
+  ._popup-menu {
+    display: none;
+  }
+};
+
+@media screen and (min-width: 768px) {
+  ._popup-menu > ul {
+    display: flex;
+    gap: 5em;
+    justify-content: flex-end;
+  }
+};

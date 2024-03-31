@@ -1,0 +1,6 @@
+@import "../../_core.scss";
+
+._header_nav a {
+    @include font(#202125, $PT-Rout, 600, 0.8em);
+    text-transform: uppercase;
+  };
