@@ -178,8 +178,12 @@ input {
   text-underline-offset: $underline-offset;
 }
 
-
-@mixin button($bg-color: #3498db, $text-color: #fff, $padding: 10px 20px, $border-radius: 5px) {
+@mixin button(
+  $bg-color: #3498db,
+  $text-color: #fff,
+  $padding: 10px 20px,
+  $border-radius: 5px
+) {
   background-color: $bg-color;
   color: $text-color;
   padding: $padding;
@@ -196,6 +200,8 @@ input {
     box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
   }
 }
+
+
 
 // ---- Variables ----
 $Poppins-SemiBold: "Poppins-SemiBold";
@@ -214,7 +220,7 @@ $PT-Rout: "PT-Rout";
   src: url("../fonts/Bluemoon/Blue\ Moon.otf");
 }
 
-@font-face{
+@font-face {
   font-family: "PT-Rout";
-  src: url("../fonts/PT-Root-UI/pt-root-ui_bold.woff")
-} 
+  src: url("../fonts/PT-Root-UI/pt-root-ui_bold.woff");
+}

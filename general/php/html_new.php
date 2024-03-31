@@ -20,7 +20,7 @@
 
                    <div class="_popup-menu">
                         <div class="_popup-close"><img src="general/img/close.svg" alt=""></div>
-                        <ul>
+                        <ul class="_header_list">
                         <li class="_header_nav-list"><a href="#about" class="_header_list_link">Обо мне</a></li>
                         <li class="_header_nav-list"><a href="#" class="_header_list_link">Классы</a></li>
                         <li class="_header_nav-list"><a href="record.php" class="_header_list_link _record">Записаться</a></li>

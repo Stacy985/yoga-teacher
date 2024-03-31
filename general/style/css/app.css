@@ -521,16 +521,21 @@ input {
   src: url("../fonts/PT-Root-UI/pt-root-ui_bold.woff");
 }
 ._about {
-  background-color: #E7EBE8;
+  background-color: #e7ebe8;
   display: flex;
+  flex-direction: space-between;
+  justify-content: center;
   align-items: center;
+  gap: 1em;
 }
 
 ._about-info {
+  width: 90%;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   gap: 2em;
-  width: 90%;
 }
 
 ._about-title {
@@ -681,6 +686,8 @@ input {
 ._about-info {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   gap: 2em;
   width: 90%;
 }
@@ -1700,141 +1707,6 @@ input {
   font-family: "PT-Rout";
   src: url("../fonts/PT-Root-UI/pt-root-ui_bold.woff");
 }
-._close {
-  display: none;
-}
-
-@media screen and (max-width: 430px) {
-  ._close {
-    display: block;
-    position: fixed;
-    z-index: 2;
-    right: 0;
-    top: 0;
-  }
-}
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-}
-
-html,
-body,
-div,
-span,
-object,
-iframe,
-figure,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-code,
-em,
-img,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-b,
-u,
-i,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-main,
-canvas,
-embed,
-footer,
-header,
-nav,
-section,
-video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -webkit-text-size-adjust: none;
-     -moz-text-size-adjust: none;
-          text-size-adjust: none;
-  list-style-type: none;
-}
-
-footer,
-header,
-nav,
-section,
-main {
-  display: block;
-}
-
-body {
-  line-height: 1;
-}
-
-ol,
-ul {
-  list-style: none;
-}
-
-blockquote,
-q {
-  quotes: none;
-}
-
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: "";
-  content: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-input {
-  border-radius: 0;
-}
-
-@font-face {
-  font-family: "Poppins-SemiBold";
-  src: url("../fonts/Poppins/Poppins-SemiBold.ttf");
-}
-@font-face {
-  font-family: "Bluemoon";
-  src: url("../fonts/Bluemoon/Blue Moon.otf");
-}
-@font-face {
-  font-family: "PT-Rout";
-  src: url("../fonts/PT-Root-UI/pt-root-ui_bold.woff");
-}
 ._header_nav_container {
   display: block;
   position: fixed;
@@ -2235,4 +2107,258 @@ input {
 }
 ._header_content-page {
   display: none;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+code,
+em,
+img,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+b,
+u,
+i,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+main,
+canvas,
+embed,
+footer,
+header,
+nav,
+section,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+     -moz-text-size-adjust: none;
+          text-size-adjust: none;
+  list-style-type: none;
+}
+
+footer,
+header,
+nav,
+section,
+main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input {
+  border-radius: 0;
+}
+
+@font-face {
+  font-family: "Poppins-SemiBold";
+  src: url("../fonts/Poppins/Poppins-SemiBold.ttf");
+}
+@font-face {
+  font-family: "Bluemoon";
+  src: url("../fonts/Bluemoon/Blue Moon.otf");
+}
+@font-face {
+  font-family: "PT-Rout";
+  src: url("../fonts/PT-Root-UI/pt-root-ui_bold.woff");
+}
+._popup-close {
+  position: absolute;
+  right: 1vh;
+  top: 1vh;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+code,
+em,
+img,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+b,
+u,
+i,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+main,
+canvas,
+embed,
+footer,
+header,
+nav,
+section,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+     -moz-text-size-adjust: none;
+          text-size-adjust: none;
+  list-style-type: none;
+}
+
+footer,
+header,
+nav,
+section,
+main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input {
+  border-radius: 0;
+}
+
+@font-face {
+  font-family: "Poppins-SemiBold";
+  src: url("../fonts/Poppins/Poppins-SemiBold.ttf");
+}
+@font-face {
+  font-family: "Bluemoon";
+  src: url("../fonts/Bluemoon/Blue Moon.otf");
+}
+@font-face {
+  font-family: "PT-Rout";
+  src: url("../fonts/PT-Root-UI/pt-root-ui_bold.woff");
+}
+._header_list {
+  padding: 1vh 1vh;
 }/*# sourceMappingURL=app.css.map */
