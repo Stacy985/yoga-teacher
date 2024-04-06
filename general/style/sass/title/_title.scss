@@ -1,0 +1,4 @@
+@import "../_core.scss";
+._title{
+    @include font(#202125, $PT-Rout, 600, 2.5em);
+}

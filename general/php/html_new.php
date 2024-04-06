@@ -23,7 +23,7 @@
                         <ul class="_header_list">
                         <li class="_header_nav-list"><a href="#about" class="_header_list_link">Обо мне</a></li>
                         <li class="_header_nav-list"><a href="#" class="_header_list_link">Классы</a></li>
-                        <li class="_header_nav-list"><a href="record.php" class="_header_list_link _record">Записаться</a></li>
+                        <li class="_header_nav-list"><a href="record.php" class="_header_list_link _record">Расписание</a></li>
                         <li class="_header_nav-list"><a href="#" class="_header_list_link">Отзывы</a></li>
                         <li class="_header_nav-list"><a href="#" class="_header_list_link">Контакты</a></li>
                         </ul>
@@ -49,12 +49,12 @@
                 <p class="_about-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
             </div>
         </div>
-    </main>
+
 
     <?php echo $_BODY; ?>
     <div class="_timing">
         <div class="_timing-select">
-            <h2>Расписание</h2>
+            <h2 class="_title">Расписание</h2>
             <div class="_timing-select-cont">
                 <select name="" id="">
                  <option value="0">Местоположение</option>
@@ -63,33 +63,39 @@
                 </select>   
             </div>
             <div class="">
-            <button class="_timing-button-left"><img src="general/img/arrow.svg" alt=""></button>
-            <button class="_timing-button-right"><img src="general/img/button_arrow_left.svg" alt=""></button>
+            <button class="_timing_button-left _timing_button"><img src="general/img/button_arrow_left.svg" alt=""></button>
+            <button class="_timing_button-right _timing_button"><img src="general/img/button_arrow_left.svg" alt=""></button>
             </div>
         </div>
-        <div class="_timing-info">
-            <div class="_timing-day">
-                <div class="_timing-day-name">Суббота</div>
-                <div class="_timing-day-list">
-                    <div class="_timing-day-list-class">
-                        <div class="_timing-day-time">13:00 - 14:30</div>
-                        <div class="_timing-day-type">Йогатерапия 2 уровень</div>
-                        <div class="_timing-day-location">Бауманская</div>
-                        <div class="_timing-day-comment">замена</div>
+        <div class="_timing_info">
+            <div class="_timing_day">
+                <div class="_timing_day-name">Суббота 14.04.2024</div>
+                <div class="_timing_day-list">
+                    <div class="_timing_day-list-class">
+                        <div class="_timing_day-time">13:00 - 14:30</div>
+                        <div class="_timing_day-type">Йогатерапия 2 уровень</div>
+                        <div class="_timing_day-location">Бауманская</div>
+                        <div class="_timing_day-comment">замена</div>
                     </div>
-                    <div class="_timing-day-list-class"></div>
-                    <div class="_timing-day-list-class"></div>
+                    <div class="_timing_day-list-class"></div>
+                    <div class="_timing_day-list-class"></div>
                 </div>
             </div>
-            <div class="_timing-day">
-                <div class="_timing-day-name">Воскресенье</div>
-                <div class="_timing-day-list">
+            <div class="_timing_day">
+                <div class="_timing_day-name">Воскресенье 15.04.2024</div>
+                <div class="_timing_day-list">
                 </div>
             </div>
-            <div class="_timing-day">Суббота</div>
-            <div class="_timing-day">Суббота</div>
-            <div class="_timing-day">Суббота</div>
+            <div class="_timing_day">
+            <div class="_timing_day-name">Понедельник 15.04.2024</div>
+            </div>
+            <div class="_timing_day">
+            <div class="_timing_day-name">Вторник 15.04.2024</div>
+            </div>
+            <div class="_timing_day">
+            <div class="_timing_day-name">Среда 15.04.2024</div></div>
         </div>
     </div>
+    </main>
 </body>
 </html>

@@ -1,0 +1,7 @@
+@import "../../_core.scss";
+
+._timing-select{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+}
+

@@ -1,0 +1,8 @@
+@import "../../_core.scss";
+._timing_day-name {
+  @include font(#404040, $PT-Rout, 600, 0.9em);
+  background-color: #e7ebe8;
+  background-size: auto;
+  padding: 1em 0.6em;
+  border-radius: 0.5em;
+}

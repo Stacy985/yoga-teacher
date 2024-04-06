@@ -178,27 +178,29 @@ input {
   text-underline-offset: $underline-offset;
 }
 
-@mixin button(
-  $bg-color: #3498db,
-  $text-color: #fff,
-  $padding: 10px 20px,
-  $border-radius: 5px
-) {
-  background-color: $bg-color;
-  color: $text-color;
-  padding: $padding;
+
+@mixin reset-button-styles {
+  appearance: none;
+  background-color: transparent;
   border: none;
-  border-radius: $border-radius;
+  margin: 0;
+  padding: 0;
+  font: inherit;
   cursor: pointer;
-
-  &:hover {
-    background-color: darken($bg-color, 10%);
-  }
-
+  outline: none;
+  text-decoration: none;
+  &:hover,
   &:focus {
     outline: none;
-    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
   }
+};
+
+@mixin button-hover-focus {
+  &:focus ,
+  &:hover{
+    background-color: rgba(#F2F2F2, 0.3);
+  }
+
 }
 
 

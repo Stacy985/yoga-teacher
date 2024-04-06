@@ -1,0 +1,10 @@
+@import "../../_core.scss";
+
+._timing_day-list-class {
+  border: 2px solid #e0e4b1;
+  border-radius: 8px;
+  padding: 20px;
+  gap: 1em;
+  @include flex(1em, column,space-between, flex-start);
+  @include font(#202125, $PT-Rout, 600, 0.8em);
+}

@@ -1,0 +1,6 @@
+@import "../../_core.scss";
+
+._timing_button {
+  @include reset-button-styles;
+  @include button-hover-focus;
+}
