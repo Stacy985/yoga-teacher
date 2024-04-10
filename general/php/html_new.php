@@ -62,13 +62,13 @@
                  <option value="2">Беляево</option>
                 </select>   
             </div>
-            <div class="">
-            <button class="_timing_button-left _timing_button"><img src="general/img/button_arrow_left.svg" alt=""></button>
+            <div class="_timing-buttons">
+            <button class="_timing_button-left _timing_button"><img src="general/img/button_arrow_right.svg" alt=""></button>
             <button class="_timing_button-right _timing_button"><img src="general/img/button_arrow_left.svg" alt=""></button>
             </div>
         </div>
         <div class="_timing_info">
-            <div class="_timing_day">
+<!--             <div class="_timing_day" data-id-day="1">
                 <div class="_timing_day-name">Суббота 14.04.2024</div>
                 <div class="_timing_day-list">
                     <div class="_timing_day-list-class">
@@ -93,7 +93,7 @@
             <div class="_timing_day-name">Вторник 15.04.2024</div>
             </div>
             <div class="_timing_day">
-            <div class="_timing_day-name">Среда 15.04.2024</div></div>
+            <div class="_timing_day-name">Среда 15.04.2024</div></div> -->
         </div>
     </div>
     </main>

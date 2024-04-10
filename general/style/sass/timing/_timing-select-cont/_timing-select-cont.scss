@@ -1,0 +1,14 @@
+@import "../../_core.scss";
+
+._timing-select-cont select{
+    margin: 0 0 0 2vh;
+    padding: 0.8vh 0.8vh 1vh 1.2vh;
+    width: 213px;
+    border-radius: 0.4em;
+    border: 1px #AEBCB2 solid;
+    appearance: none;
+    background-image: url('../../../../img/arrow_drop_down.svg');
+    background-position: right top;
+    background-size: 9px;
+    background-repeat: no-repeat;
+}

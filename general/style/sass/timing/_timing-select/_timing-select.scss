@@ -2,6 +2,8 @@
 
 ._timing-select{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+    grid-template-columns: auto 1fr 1fr;
+    align-items: center;
+    margin-bottom: 24px;
 }
 
